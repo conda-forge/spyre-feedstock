@@ -1,5 +1,5 @@
-About spyre
-===========
+About dataspyre
+===============
 
 Home: https://github.com/adamhajari/spyre
 
@@ -7,31 +7,30 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Web Application Framework for simple user interface
+Summary: Web Application Framework for simple user interface.
 
 
 
-Installing spyre
-================
+Installing dataspyre
+====================
 
-Installing `spyre` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `dataspyre` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `spyre` can be installed with:
+Once the `conda-forge` channel has been enabled, `dataspyre` can be installed with:
 
 ```
-conda install spyre
+conda install dataspyre
 ```
 
-It is possible to list all of the versions of `spyre` available on your platform with:
+It is possible to list all of the versions of `dataspyre` available on your platform with:
 
 ```
-conda search spyre --channel conda-forge
+conda search dataspyre --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -77,21 +76,21 @@ Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-f
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/spyre/badges/version.svg)](https://anaconda.org/conda-forge/spyre)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/spyre/badges/downloads.svg)](https://anaconda.org/conda-forge/spyre)
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dataspyre/badges/version.svg)](https://anaconda.org/conda-forge/dataspyre)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dataspyre/badges/downloads.svg)](https://anaconda.org/conda-forge/dataspyre)
 
 
-Updating spyre-feedstock
-========================
+Updating dataspyre-feedstock
+============================
 
-If you would like to improve the spyre recipe or build a new
+If you would like to improve the dataspyre recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/spyre-feedstock are
+Note that all branches in the conda-forge/dataspyre-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
