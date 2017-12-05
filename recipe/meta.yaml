@@ -1,29 +1,30 @@
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: dataspyre
   version: {{ version }}
 
 source:
-  fn: DataSpyre.tar.gz
   url: https://pypi.io/packages/source/D/DataSpyre/DataSpyre-{{ version }}.tar.gz
-  sha256: 7a7cf1f355f237d66c678cadc96b2de7cf1258fd065fcc6154189bc9de96266a
+  sha256: 170a95c735715365581a21ac58e4631aba5fa9af60a72ed56012798e0fed4022
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
-    - numpy
-    - pandas
     - cherrypy
     - jinja2
     - matplotlib
+    - numpy
+    - pandas
+    - six >=1.11.0
 
 test:
   imports:
