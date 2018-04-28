@@ -1,4 +1,4 @@
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: dataspyre
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/D/DataSpyre/DataSpyre-{{ version }}.tar.gz
-  sha256: 170a95c735715365581a21ac58e4631aba5fa9af60a72ed56012798e0fed4022
+  sha256: 09d84b25c77d5fd7662df50c51822d93ad0d2e98590bfa80b6747f6a31e82f34
 
 build:
   number: 0
