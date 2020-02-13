@@ -9,7 +9,7 @@ source:
   sha256: 09d84b25c77d5fd7662df50c51822d93ad0d2e98590bfa80b6747f6a31e82f34
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -21,7 +21,7 @@ requirements:
     - python
     - cherrypy
     - jinja2
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - six >=1.11.0
