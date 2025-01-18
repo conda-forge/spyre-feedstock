@@ -5,20 +5,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/D/DataSpyre/DataSpyre-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/D/DataSpyre/DataSpyre-{{ version }}.tar.gz
   sha256: 09d84b25c77d5fd7662df50c51822d93ad0d2e98590bfa80b6747f6a31e82f34
 
 build:
-  number: 1
+  number: 2
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - cherrypy
     - jinja2
     - matplotlib-base
@@ -27,6 +28,8 @@ requirements:
     - six >=1.11.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - spyre
 
